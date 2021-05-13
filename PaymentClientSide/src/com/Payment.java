@@ -45,7 +45,7 @@ public class Payment
 					 newPay + "\"}";
 					output = "Inserted successfully";
 				} catch (Exception e) {
-					output = "{\"status\":\"error\", \"data\": \"Error while inserting the item.\"}"; 
+					output = "{\"status\":\"error\", \"data\": \"Error while inserting the payment.\"}"; 
 					 System.err.println(e.getMessage());
 				}
 				return output;
@@ -80,7 +80,7 @@ public class Payment
 				output += "<td>" + email + "</td>";
 	// buttons
 	output += "<td><input name='btnUpdate' type='button' value='Update' "
-	+ "class='btnUpdate btn btn-secondary' data-itemid='" + PID + "'></td>"
+	+ "class='btnUpdate btn btn-secondary' data-pid='" + PID + "'></td>"
 	+ "<td><input name='btnRemove' type='button' value='Remove' "
 	+ "class='btnRemove btn btn-danger' data-pid='" + PID + "'></td></tr>"; 
 	 } 

@@ -35,7 +35,7 @@ data : $("#formPay").serialize(),
 dataType : "text", 
 complete : function(response, status) 
 { 
-onItemSaveComplete(response.responseText, status); 
+onPaymentSaveComplete(response.responseText, status); 
 } 
 }); 
 }); 
@@ -60,7 +60,7 @@ $(document).on("click", ".btnRemove", function(event)
 		 dataType : "text", 
 		 complete : function(response, status) 
 		 { 
-		 onItemDeleteComplete(response.responseText, status); 
+		 onPaymentDeleteComplete(response.responseText, status); 
 		 } 
 		 }); 
 		});
